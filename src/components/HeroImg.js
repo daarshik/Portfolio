@@ -1,5 +1,5 @@
 import React from "react";
-
+import "./home.css";
 
 const HeroImg = () => {
   return (
@@ -10,7 +10,7 @@ const HeroImg = () => {
         width="700"
         height="424"
         viewBox="0 0 979.32677 424.8366"
-        className="w-[300px] h-[400px] ml-4"
+        className="md:w-[500px] md:h-[300px] mr-20  sm:w-[500px] sm:h-[300px] sm:ml-4 alignHeroSvg"
       >
         <path
           d="M993.71816,412.83936H419.142a9.19888,9.19888,0,0,0,0,18.39776H435.417V651.3026a9.19888,9.19888,0,0,0,18.39776,0l.1398-220.06548h461.1557l42.52,220.06548a9.19887,9.19887,0,1,0,18.39775,0l2.67633-220.06548h15.01383a9.19888,9.19888,0,0,0,0-18.39776Z"

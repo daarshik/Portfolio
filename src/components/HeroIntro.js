@@ -10,30 +10,29 @@ const HeroIntro = () => {
     deleteSpeed: 80,
   });
   return (
-    <div>
+    <div className="tracking-wider">
       <p>
-        <span className="block">Hello, </span>I'm{" "}
-        <span style={{ fontWeight: "bold" }}>Daarshik</span>{" "}
+        <span className="block text-xl">Hello, </span>I'm{" "}
+        <span style={{ fontWeight: "bold" }} className="text-xl">
+          Daarshik
+        </span>{" "}
         <span
-          style={{ fontWeight: "bold", color: "black" }}
-          className=" lg:shadow-md"
+          style={{ fontWeight: "bold", display: "block" }}
+          className=" md:shadow-md text-lg text-cyan-900 lg:text-orange-500 "
         >
           {text}
-          <span style={{ color: "red" }}>
+          <span style={{ color: "black" }}>
             <Cursor cursorStyle=">" />
           </span>
         </span>
       </p>
-      <p className="mt-3 lg:text-gray-900">
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis,
-        deserunt quasi hic labore eum sapiente mollitia unde enim molestias
-        illum quae necessitatibus id quisquam tempora amet, eveniet, vero cumque
-        ex tenetur recusandae corporis! Corrupti sed sit cumque non distinctio,
-        autem modi error voluptas minima accusantium? Lorem ipsum dolor sit amet
-        consectetur adipisicing elit. Id dolor, velit neque officia sapiente a
-        repudiandae, odio doloremque facilis quia eaque aliquid sunt labore
-        nihil autem, amet rerum qui libero minus? Voluptatem nihil natus iusto
-        maiores cum! Possimus aperiam, aspernatur beatae animi accusantium
+      <p className="mt-3 text-white text-lg">
+        As an aspiring Computer Science Engineer, I bring robust problem-solving
+        skills and proficiency in C++, JavaScript, React, Java, and Spring Boot
+        to the table. My proactive nature, effective communication, and
+        dedication to continuous learning make me an ideal candidate. I thrive
+        in collaborative environments and am eager to contribute effectively to
+        your team.
       </p>
     </div>
   );

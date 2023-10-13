@@ -64,4 +64,16 @@
   scale: ; */
 }
 
-
+@media screen and (max-width: 640px) {
+  .alignHeroSvg {
+    height: 300px;
+    width: 350px;
+  }
+}
+/* @media screen and (max-width: 768px) {
+  .alignHeroSvg {
+    height: 300px;
+    width: 400px;
+    margin-right: 40px;
+  }
+} */
