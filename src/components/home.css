@@ -1,0 +1,65 @@
+@keyframes moveleafOne {
+  from {
+    translate: -1 0rem;
+    scale: 1;
+  }
+  to {
+    translate: 1 0rem;
+    scale: 0.4;
+  }
+}
+
+.leafOne {
+  animation: moveleafOne 2.5s ease-in-out infinite;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+@keyframes moveleafTwo {
+  from {
+    translate: -1 0rem;
+    scale: 1;
+  }
+  to {
+    translate: 1 0rem;
+    scale: 0.6;
+  }
+}
+
+.leafTwo {
+  animation: moveleafTwo 2s ease-in-out infinite;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+@keyframes moveHead {
+  0%,
+  100% {
+    transform: translateZ(-10px) scale(1);
+  }
+  50% {
+    transform: translateZ(10px) scale(1.1);
+  }
+}
+
+.head {
+  animation: moveHead 2s ease-in-out infinite;
+  transform-box: fill-box;
+  transform-origin: top left;
+}
+
+@keyframes moveHair {
+  0%,
+  100% {
+    transform: translateX(-110px) translateY(-235px) scale(1);
+  }
+  50% {
+    transform: translateX(-110px) translateY(-235px) scale(1.1);
+  }
+}
+
+.hair {
+  animation: moveHair 2.5s ease-in-out 0.5s infinite;
+  transform-box: fill-box;
+  transform-origin: 0px 0px;
+  /* translate: 10px 10px;
+  scale: ; */
+}
