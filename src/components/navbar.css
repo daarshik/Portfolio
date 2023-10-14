@@ -2,15 +2,16 @@
   display: flex;
   /* background-color: rgba(0, 0, 0, 0.799);
    */
-  background-color: rgba(0, 0, 0, 0.799);
+  background-color: rgba(0, 0, 0);
   /* color: rgba(212, 187, 220, 0.799); */
   /* linear-gradient:, */
   color: whitesmoke;
   justify-content: space-between;
-  height: 50px;
+  /* height: 50px; */
   width: 100%;
   align-items: center;
   position: fixed;
+  top: 0;
   cursor: pointer;
   padding-right: 25px;
   z-index: 49;

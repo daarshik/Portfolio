@@ -33,65 +33,118 @@
 @keyframes moveHead {
   0%,
   100% {
-    transform: translateZ(-10px) scale(1);
+    transform: translateX(-10px);
   }
   50% {
-    transform: translateZ(10px) scale(1.1);
+    transform: translateX(10px);
   }
 }
 
 .head {
   animation: moveHead 2s ease-in-out infinite;
-  transform-box: fill-box;
-  transform-origin: top left;
+}
+
+@keyframes moveHand {
+  0%,
+  100% {
+    transform: translateX(-120px) translateY(-240px);
+  }
+  50% {
+    transform: translateX(-110px) translateY(-230px);
+  }
+}
+
+.handTwo {
+  animation: moveHandTwo 2s ease-in-out infinite;
+}
+
+@keyframes moveHandTwo {
+  0%,
+  100% {
+    transform: translateX(-112px) translateY(-240px);
+  }
+  50% {
+    transform: translateX(-114px) translateY(-240px);
+  }
+}
+
+.legOne {
+  animation: moveleg 2s ease-in-out infinite;
+}
+
+@keyframes moveleg {
+  0%,
+  100% {
+    transform: translateY(-5px);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+}
+
+.Upperleg {
+  animation: moveUpperleg 2s ease-in-out infinite;
+}
+
+@keyframes moveUpperleg {
+  0%,
+  100% {
+    transform: translateX(-110px) translateY(-240px);
+  }
+  50% {
+    transform: translateX(-110px) translateY(-230px);
+  }
+}
+
+.UpperlegTwo {
+  animation: moveUpperlegTwo 2s ease-in-out infinite;
+}
+
+@keyframes moveUpperlegTwo {
+  0%,
+  100% {
+    transform: translateX(-110px) translateY(-230px);
+  }
+  50% {
+    transform: translateX(-110px) translateY(-225px);
+  }
+}
+.hand,
+.lowerhand {
+  animation: moveHand 2s ease-in-out infinite;
 }
 
 @keyframes moveHair {
   0%,
   100% {
-    transform: translateX(-110px) translateY(-235px) scale(1);
+    transform: translateX(-120px) translateY(-235px);
   }
   50% {
-    transform: translateX(-110px) translateY(-235px) scale(1.1);
+    transform: translateX(-100px) translateY(-235px);
   }
 }
 
 .hair {
-  animation: moveHair 2.5s ease-in-out 0.5s infinite;
-  transform-box: fill-box;
-  transform-origin: 0px 0px;
-  /* translate: 10px 10px;
-  scale: ; */
+  animation: moveHair 2s ease-in-out infinite;
 }
 
-@media screen and (max-width: 640px) {
+
+
+@media (min-width: 350px) and (max-width: 950px) {
+  .setAboutMe {
+    display: flex;
+    flex-direction: column;
+  }
   .alignHeroSvg {
-    height: 300px;
+    height: 200px;
     width: 350px;
+    margin-left: 5px;
+  }
+  .setName {
+    font-size: 72px;
+    color: bisque;
   }
 }
-
-@media screen and (min-width: 1278px) {
-  .alignHeroSvg {
-    height: 400px;
-    width: 500px;
-  }
-  .setAspectRatio {
-    aspect-ratio: 2/1;
-  }
-}
-
-@media (min-width: 350px) and (max-width: 1280px) {
-  .setAspectRatio {
-    aspect-ratio: 1/2;
-  }
-}
-
-/* .blue-line {
-  width: 0px;
-  height: 2px;
-  background-color: blue;
-} */
 
 .blue-line-point {
   width: 20px;

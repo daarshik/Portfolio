@@ -1,11 +1,20 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import { TfiViewListAlt } from "react-icons/tfi";
 import "./navbar.css";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
   const [select, setSelect] = useState("");
+
+
+  const skillref = useRef(null);
+
+  
+
+
+
+  const navigate = useNavigate();
   return (
     <nav className="nav_parent">
       <div className="nav_child1">
@@ -17,6 +26,7 @@ const Navbar = () => {
           className={`text2 ${select === "home" ? "selected" : ""}`}
           onClick={() => {
             setSelect("home");
+            navigate("/");
           }}
         >
           Home
@@ -26,6 +36,7 @@ const Navbar = () => {
           className={`text2 ${select === "skill" ? "selected" : ""}`}
           onClick={() => {
             setSelect("skill");
+            navigate("/skill");
           }}
         >
           Skills
@@ -34,6 +45,7 @@ const Navbar = () => {
           className={`text2 ${select === "exp" ? "selected" : ""}`}
           onClick={() => {
             setSelect("exp");
+            navigate("/about");
           }}
         >
           About Me

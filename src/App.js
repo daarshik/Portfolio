@@ -9,17 +9,19 @@ import { AiFillLinkedin, AiFillGithub, AiOutlineMail } from "react-icons/ai";
 function App() {
   return (
     <>
-      <Navbar />
       <BrowserRouter>
+        <Navbar />
         <Routes>
           <Route path="/" Component={Home}></Route>
+          <Route path="/skill" Component={Skills}></Route>
+          <Route path="/about" Component={Experience}></Route>
         </Routes>
       </BrowserRouter>
-      <div className="flex justify-center items-center m-0 p-0 bg-gray-400 bg-transparent ">
+      {/*<div className="flex justify-center items-center m-0 p-0 bg-white bg-transparent ">
         <AiFillLinkedin className="m-1 h-12  w-32" />
         <AiFillGithub className="m-1 p-1 h-12  w-32" />
         <AiOutlineMail className="m-1 p-1 h-12  w-32" />
-      </div>
+  </div>*/}
     </>
   );
 }
