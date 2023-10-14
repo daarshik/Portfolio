@@ -18,7 +18,7 @@ const HeroIntro = () => {
         </span>{" "}
         <span
           style={{ fontWeight: "bold", display: "block" }}
-          className=" md:shadow-md text-lg text-cyan-900 lg:text-orange-500 "
+          className=" md:shadow-md text-lg text-cyan-900"
         >
           {text}
           <span style={{ color: "black" }}>

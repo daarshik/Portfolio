@@ -70,10 +70,34 @@
     width: 350px;
   }
 }
-/* @media screen and (max-width: 768px) {
+
+@media screen and (min-width: 1278px) {
   .alignHeroSvg {
-    height: 300px;
-    width: 400px;
-    margin-right: 40px;
+    height: 400px;
+    width: 500px;
   }
+  .setAspectRatio {
+    aspect-ratio: 2/1;
+  }
+}
+
+@media (min-width: 350px) and (max-width: 1280px) {
+  .setAspectRatio {
+    aspect-ratio: 1/2;
+  }
+}
+
+/* .blue-line {
+  width: 0px;
+  height: 2px;
+  background-color: blue;
 } */
+
+.blue-line-point {
+  width: 20px;
+  height: 20px;
+  background-color: blue;
+  border-radius: 100%;
+  position: relative;
+  top: 10px;
+}

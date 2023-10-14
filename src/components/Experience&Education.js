@@ -1,9 +1,17 @@
-import React from 'react'
+import React from "react";
+import "./home.css";
+import Education from "./Education";
 
 const Experience = () => {
   return (
-    <div>Experience&Education</div>
-  )
-}
+    <div>
+      <div>
+        <img src="" />
+      </div>
+      <Education />
+      <Education />
+    </div>
+  );
+};
 
-export default Experience
+export default Experience;
