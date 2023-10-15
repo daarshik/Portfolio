@@ -4,7 +4,7 @@ import "./skills.css";
 
 const Education = () => {
   return (
-    <div>
+    <div className="animate-AboutSubSection">
       {Exp.map((item, i) => (
         <div key={i}>
           <p className="text-4xl font-extrabold text-white">{item.section}</p>

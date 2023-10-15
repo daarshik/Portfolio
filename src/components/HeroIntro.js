@@ -11,7 +11,7 @@ const HeroIntro = () => {
   });
   return (
     <div className="tracking-wider ml-2">
-      <p className="text-6xl text-white">
+      <p className="text-6xl text-white animate-HeroIntro-Heading">
         <span className="block text-6xl ">Hello, </span>I'm{" "}
         <span style={{ fontWeight: "bold" }} className="text-8xl setName">
           Daarshik
@@ -34,6 +34,7 @@ const HeroIntro = () => {
         in collaborative environments and am eager to contribute effectively to
         your team.
       </p>
+      <button className="btn-grad m-5 font-semibold">View Resume</button>
     </div>
   );
 };

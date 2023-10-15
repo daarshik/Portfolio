@@ -47,3 +47,57 @@
     font-size: small;
   }
 }
+
+.animate-Skills {
+  animation: load-skills-heading 300ms ease-in 700ms;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+.animate-About {
+  animation: load-skills-heading 300ms ease-in 700ms;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+.animate-ProfileImg {
+  animation: load-Profile 300ms ease-in 700ms;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+.animate-AboutSubSection {
+  animation: load-AboutSubSection 300ms ease-in 700ms;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+@keyframes load-skills-heading {
+  0% {
+    transform: translateY(-30px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes load-Profile {
+  0% {
+    transform: translateX(-30px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes load-AboutSubSection {
+  0% {
+    transform: translateX(30px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}

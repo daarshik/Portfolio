@@ -1,5 +1,5 @@
 import React from "react";
-
+import './skills.css'
 import SkillImg from "./SkillImg";
 import SkillBox from "./SkillBox";
 
@@ -9,7 +9,7 @@ import SkillBox from "./SkillBox";
 const Skills = () => {
   return (
     <div className="flex flex-col justify-around text-white mt-20 mr-2">
-      <h1 className="font-extrabold text-6xl self-center">Skills</h1>
+      <h1 className="font-extrabold text-6xl self-center animate-Skills">Skills</h1>
       <div className="flex justify-around flex-col mt-20 md:flex-row">
         <img
           src="https://64821ca5a6ff9d2cd98ceab9--kush636.netlify.app/static/media/web.9331f972.svg"

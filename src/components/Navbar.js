@@ -51,6 +51,7 @@ const Navbar = () => {
           className={`text2 ${select === "contact" ? "selected" : ""}`}
           onClick={() => {
             setSelect("contact");
+            navigate("/contact");
           }}
         >
           Contact Me

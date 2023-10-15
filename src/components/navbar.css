@@ -10,17 +10,74 @@
   cursor: pointer;
   padding-right: 25px;
   z-index: 50;
+  animation: nav-load 300ms ease-in;
 }
 
+.animate-FootBar {
+  animation: foot-load 500ms ease-in;
+}
+
+@keyframes nav-load {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes foot-load {
+  0% {
+    transform: translateY(1000%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
 .text1 {
   margin-top: 1rem;
   margin-left: 1rem;
   margin-bottom: 1rem;
   font-size: x-large;
+  animation: nav-portfolio 700ms;
+  animation-fill-mode: forwards;
+  transform: translateX(-100%);
+}
+
+@keyframes nav-portfolio {
+  0% {
+    transform: translateX(-100%);
+  }
+  90% {
+    transform: translateX(10%);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 
 .nav_child2 {
   display: flex;
+  animation: nav-link-load 400ms ease-in 300ms;
+  animation-fill-mode: forwards;
+  transform: scale(0);
+}
+
+.nav_child1 {
+  animation: nav-link-load 400ms ease-in 300ms;
+  animation-fill-mode: forwards;
+  transform: scale(0);
+}
+@keyframes nav-link-load {
+  0% {
+    transform: scale(0);
+  }
+  90% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 .text2 {
@@ -29,6 +86,12 @@
   padding: 0.5rem;
   font-size: large;
   height: 2.5rem;
+
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+
 }
 
 .text2:hover {
@@ -38,9 +101,8 @@
 }
 
 .selected {
-  background-color: rgb(103, 94, 94);
-
-  transition: all 0.8s ease-in-out;
+  background-color: white;
+  color: black;
 }
 
 @media screen and (max-width: 350px) {
