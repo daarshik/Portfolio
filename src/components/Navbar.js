@@ -63,7 +63,7 @@ const Navbar = () => {
           <TfiViewListAlt onClick={handleToggle} />
         </div>
         <div className={`${toggle ? "open" : "hidden"} z-50`}>
-          <AiOutlineClose onClick={handleToggle} />
+          <AiOutlineClose onClick={handleToggle} className="w-10 h-10"/>
         </div>
       </div>
     </nav>
