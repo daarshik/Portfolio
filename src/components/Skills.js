@@ -8,7 +8,7 @@ import SkillBox from "./SkillBox";
 
 const Skills = () => {
   return (
-    <div className="flex flex-col justify-around bg-black text-white mt-20 mr-2">
+    <div className="flex flex-col justify-around text-white mt-20 mr-2">
       <h1 className="font-extrabold text-6xl self-center">Skills</h1>
       <div className="flex justify-around flex-col mt-20 md:flex-row">
         <img

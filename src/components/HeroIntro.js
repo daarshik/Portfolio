@@ -11,14 +11,14 @@ const HeroIntro = () => {
   });
   return (
     <div className="tracking-wider ml-2">
-      <p className="text-6xl">
-        <span className="block text-6xl">Hello, </span>I'm{" "}
+      <p className="text-6xl text-white">
+        <span className="block text-6xl ">Hello, </span>I'm{" "}
         <span style={{ fontWeight: "bold" }} className="text-8xl setName">
           Daarshik
         </span>{" "}
         <span
           style={{ fontWeight: "bold", display: "block" }}
-          className=" md:shadow-md text-4xl text-orange-300"
+          className=" text-4xl text-orange-300"
         >
           {text}
           <span style={{ color: "white" }}>

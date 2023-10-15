@@ -1,5 +1,6 @@
 import React, { useRef, useState } from "react";
 import { TfiViewListAlt } from "react-icons/tfi";
+import { AiOutlineClose } from "react-icons/ai";
 import "./navbar.css";
 import { Link, useNavigate } from "react-router-dom";
 
@@ -7,14 +8,10 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(false);
   const [select, setSelect] = useState("");
 
-
-  const skillref = useRef(null);
-
-  
-
-
-
   const navigate = useNavigate();
+  const handleToggle = () => {
+    setToggle((prev) => !prev);
+  };
   return (
     <nav className="nav_parent">
       <div className="nav_child1">
@@ -60,13 +57,13 @@ const Navbar = () => {
         </p>
       </div>
 
-      <div className="nav_child3" class="md:hidden mr-2">
-        <TfiViewListAlt
-          onClick={() => {
-            setToggle((prev) => !prev);
-            console.log(toggle);
-          }}
-        />
+      <div className={`${toggle ? "open" : ""} hide`}>
+        <div className={`${toggle ? "hidden" : "open"} z-50`}>
+          <TfiViewListAlt onClick={handleToggle} />
+        </div>
+        <div className={`${toggle ? "open" : "hidden"} z-50`}>
+          <AiOutlineClose onClick={handleToggle} />
+        </div>
       </div>
     </nav>
   );

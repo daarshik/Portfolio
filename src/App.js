@@ -10,18 +10,26 @@ function App() {
   return (
     <>
       <BrowserRouter>
-        <Navbar />
+        <div className="flex flex-col">
+          <Navbar />
+          <div>
+            <div className="text-white z-50 fixed bottom-0 flex justify-center items-center bg-transparent setIcons">
+              <div className="flex border rounded m-5">
+                <AiFillLinkedin className="p-1 h-12  w-28" />
+                <AiFillGithub className="p-1 h-12  w-28" />
+                <AiOutlineMail className="p-1 h-12  w-28" />
+              </div>
+            </div>
+          </div>
+        </div>
         <Routes>
           <Route path="/" Component={Home}></Route>
           <Route path="/skill" Component={Skills}></Route>
           <Route path="/about" Component={Experience}></Route>
         </Routes>
       </BrowserRouter>
-      {/*<div className="flex justify-center items-center m-0 p-0 bg-white bg-transparent ">
-        <AiFillLinkedin className="m-1 h-12  w-32" />
-        <AiFillGithub className="m-1 p-1 h-12  w-32" />
-        <AiOutlineMail className="m-1 p-1 h-12  w-32" />
-  </div>*/}
+
+      {/**/}
     </>
   );
 }

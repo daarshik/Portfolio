@@ -1,12 +1,11 @@
 import React from "react";
 import "./home.css";
 import Education from "./Education";
-import AboutImg from "./AboutImg";
 import ProfileImg from "./assets/Daarshik_portfolioImg.jpg";
 
 const Experience = () => {
   return (
-    <div className="flex flex-col justify-around bg-black text-white mt-20 mr-2">
+    <div className="flex flex-col justify-around text-white mt-20 mr-2">
       <h1 className="font-extrabold text-6xl self-center">About Me</h1>
       <div className="flex lg:flex-row sm:flex-col justify-around p-3 setAboutMe">
         <div className="flex justify-center items-start mt-24">

@@ -1,20 +1,15 @@
 .nav_parent {
   display: flex;
-  /* background-color: rgba(0, 0, 0, 0.799);
-   */
   background-color: rgba(0, 0, 0);
-  /* color: rgba(212, 187, 220, 0.799); */
-  /* linear-gradient:, */
   color: whitesmoke;
   justify-content: space-between;
-  /* height: 50px; */
   width: 100%;
   align-items: center;
   position: fixed;
   top: 0;
   cursor: pointer;
   padding-right: 25px;
-  z-index: 49;
+  z-index: 50;
 }
 
 .text1 {
@@ -29,29 +24,22 @@
 }
 
 .text2 {
-  /* margin-top: 0.5rem; */
   margin-left: 1rem;
   margin-right: 1rem;
-  /* padding-right: 0.5rem;
-  padding-left: 0.5rem; */
   padding: 0.5rem;
   font-size: large;
-  /* border: 1px solid; */
   height: 2.5rem;
 }
 
 .text2:hover {
   background-color: rgb(255, 245, 245);
-  /* height: 2.5rem; */
   color: black;
   box-sizing: border-box;
-  /* border: 1px solid white; */
 }
 
 .selected {
   background-color: rgb(103, 94, 94);
-  /* height: 2.5rem; */
-  /* color: black; */
+
   transition: all 0.8s ease-in-out;
 }
 
@@ -64,11 +52,8 @@
     display: flex;
     flex-direction: column;
     margin-top: 95px;
-
-    position: relative;
-    top: 60px;
-    left: 40px;
-    width: 12rem;
+    top: 0;
+    right: 0;
     color: aliceblue;
     height: fit-content;
   }
@@ -79,20 +64,23 @@
 @media (min-width: 350px) and (max-width: 768px) {
   .nav_child2 {
     display: none;
+    position: absolute;
   }
   .open {
-    background-color: rgba(0, 0, 0, 0.799);
+    background: transparent;
     display: flex;
     flex-direction: column;
-    margin-top: 95px;
-    top: 85px;
-    position: relative;
-    left: 100px;
-    width: 8rem;
-    color: aliceblue;
-    height: fit-content;
+    right: 0;
+    top: 0;
   }
+
   .text2 {
-    border: none;
+    border: 0;
+  }
+}
+
+@media (min-width: 800px) {
+  .hide {
+    display: none;
   }
 }
