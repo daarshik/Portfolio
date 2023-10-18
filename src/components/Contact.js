@@ -7,11 +7,9 @@ const Contact = () => {
     <div className="text-white mt-20 flex flex-col items-center">
       <h1 className="text-6xl font-extrabold animate-Skills">Contact Me</h1>
       <p className="text-lg m-2 p-20 animate-ProfileImg">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa
-        obcaecati excepturi aspernatur! Praesentium, architecto similique
-        provident aliquid aliquam sit itaque rem voluptatibus voluptas
-        explicabo, consequuntur obcaecati? Fugit corporis perferendis at impedit
-        dolor eos incidunt esse inventore ea, cum minus saepe repellat id,
+        Hello! If you're looking for assistance or just want to chat about web
+        development, I'm here to help! Feel free to reach out anytime. Have a
+        fantastic day!
       </p>
       <Link to="mailto:daarshikdwivedi10@gmail.com">
         <button className="btn-grad m-5 font-semibold animate-ProfileImg">

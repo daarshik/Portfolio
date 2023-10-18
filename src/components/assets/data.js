@@ -25,7 +25,36 @@ export const Exp = [
       {
         id: "Higher Secondary Certificate",
         duration: "2016-2018",
-        des: ["W.H.Smith Memorial School, Varanasi"],
+        des: ["W. H. Smith Memorial School, Varanasi"],
+      },
+    ],
+  },
+  {
+    section: "Personal Projects",
+    subsection: [
+      {
+        id: "Youtube Clone",
+        des: [
+          "Technologies: - ReactJS, Scss, Redux Toolkit, React Bootstrap, React Icons",
+          "Description: - Developed a YouTube clone with features like video commenting, search, user-subscribed channel retrieval, and pagination using a third-party YouTube API.",
+          "Security Enhancements: - Implemented protected routing and utilized Passport.js for authentication. Integrated loader animations for improved user experience.",
+        ],
+      },
+      {
+        id: "Spotify Connected App",
+        des: [
+          "Technologies: - React.js, OAuth",
+          "Description: - Designed a personalized Spotify data visualization project using ReactJS and Styled Components, offering insights into listening habits and preferences.",
+          "Security Enhancements: - Implemented OAuth for secure authenticated access without sharing user credentials.",
+        ],
+      },
+      {
+        id: "Task Manager",
+        des: [
+          "Technologies: - React.js (frontend), Spring Boot (backend), MySQL.",
+          "Description: - Created a comprehensive full-stack web application using React.js for the frontend and SpringBoot for the backend. Implemented features for task management and user interaction.",
+          "Security Enhancements: - Utilized JSON Web Token (JWT) for secure authentication.",
+        ],
       },
     ],
   },

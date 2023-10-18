@@ -39,7 +39,13 @@ const HeroIntro = () => {
         in collaborative environments and am eager to contribute effectively to
         your team.
       </p>
-      <button className="btn-grad m-5 font-semibold">View Resume</button>
+      <a
+        href="https://drive.google.com/file/d/1hbNrOCjITre1Q5IBfXT1C-pqkfHYTgzh/view"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <button className="btn-grad m-5 font-semibold">View Resume</button>
+      </a>
     </div>
   );
 };
