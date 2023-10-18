@@ -91,7 +91,6 @@
   transition: 0.5s;
   background-size: 200% auto;
   color: white;
-
 }
 
 .text2:hover {
@@ -129,15 +128,16 @@
     position: absolute;
   }
   .open {
-    background: transparent;
     display: flex;
     flex-direction: column;
     right: 0;
     top: 0;
+    transition: 0.5s;
   }
 
   .text2 {
-    border: 0;
+    margin-top: 20px;
+    font-size: small;
   }
 }
 

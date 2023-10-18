@@ -1,20 +1,3 @@
-export const data = [
-  {
-    id: "Programming languages and core fundamentals",
-    des: [
-      "C++/Java/SQL (Structured Query Language)",
-      "OOPs (Object Oriented Programming Language)",
-      "RDBMS (Relational DataBase Management System)",
-      "Operating System",
-      "Computer Networking",
-    ],
-  },
-  {
-    id: "Web Development",
-    des: [],
-  },
-];
-
 export const Exp = [
   {
     section: "Experience",

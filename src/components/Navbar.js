@@ -4,6 +4,7 @@ import { AiOutlineClose } from "react-icons/ai";
 import "./navbar.css";
 import { Link, useNavigate } from "react-router-dom";
 
+
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
   const [select, setSelect] = useState("");
@@ -15,22 +16,21 @@ const Navbar = () => {
   return (
     <nav className="nav_parent">
       <div className="nav_child1">
-        <p className="text1">Portfolio</p>
-      </div>
-
-      <div className={`nav_child2 ${toggle ? "open" : "close"}`}>
         <p
-          className={`text2 ${select === "home" ? "selected" : ""}`}
+          className="text1"
           onClick={() => {
-            setSelect("home");
+            setSelect("portfolio");
             navigate("/");
           }}
         >
-          Home
+          Portfolio
         </p>
+      </div>
 
+      <div className={`nav_child2 ${toggle ? "open" : "close"}`}>
+          
         <p
-          className={`text2 ${select === "skill" ? "selected" : ""}`}
+          className={`text2 rounded ${select === "skill" ? "selected" : ""}`}
           onClick={() => {
             setSelect("skill");
             navigate("/skill");
@@ -39,7 +39,7 @@ const Navbar = () => {
           Skills
         </p>
         <p
-          className={`text2 ${select === "exp" ? "selected" : ""}`}
+          className={`text2 rounded ${select === "exp" ? "selected" : ""}`}
           onClick={() => {
             setSelect("exp");
             navigate("/about");
@@ -48,7 +48,7 @@ const Navbar = () => {
           About Me
         </p>
         <p
-          className={`text2 ${select === "contact" ? "selected" : ""}`}
+          className={`text2 rounded ${select === "contact" ? "selected" : ""}`}
           onClick={() => {
             setSelect("contact");
             navigate("/contact");
@@ -59,11 +59,14 @@ const Navbar = () => {
       </div>
 
       <div className={`${toggle ? "open" : ""} hide`}>
-        <div className={`${toggle ? "hidden" : "open"} z-50`}>
+        <div className={`${toggle ? "hidden" : "open"} `}>
           <TfiViewListAlt onClick={handleToggle} />
         </div>
-        <div className={`${toggle ? "open" : "hidden"} z-50`}>
-          <AiOutlineClose onClick={handleToggle} className="w-10 h-10"/>
+        <div className={`${toggle ? "open" : "hidden"} `}>
+          <AiOutlineClose
+            onClick={handleToggle}
+            className="relative w-5 h-5 right-0 top-0"
+          />
         </div>
       </div>
     </nav>

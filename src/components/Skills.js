@@ -1,32 +1,49 @@
 import React from "react";
-import './skills.css'
+import "./skills.css";
 import SkillImg from "./SkillImg";
 import SkillBox from "./SkillBox";
+import Img from "./assets/SkillImgTop.svg";
 
+const bottomSectionData = {
+  id: "Programming languages and core fundamentals",
+  des: [
+    "Proficient in programming with C++, Java, and SQL (Structured Query Language), with a focus on building efficient and scalable applications.",
+    "Strong understanding and application of Object-Oriented Programming (OOP) principles for developing modular and maintainable code.",
+    "In-depth knowledge of Relational Database Management Systems (RDBMS) and their implementation, optimizing data storage and retrieval processes.",
+  ],
+};
 
-
+const topSectionData = {
+  id: "Web Development",
+  des: [
+    "Proficient in frontend technologies such as JavaScript, ReactJS, HTML, CSS, and Tailwind CSS for creating engaging and responsive user interfaces.",
+    "Skilled in backend development utilizing Node.js and Spring Boot to build robust and scalable server-side applications.",
+    "Strong understanding and practical experience with Git for effective version control and collaborative software development.",
+  ],
+};
 
 const Skills = () => {
   return (
-    <div className="flex flex-col justify-around text-white mt-20 mr-2">
-      <h1 className="font-extrabold text-6xl self-center animate-Skills">Skills</h1>
-      <div className="flex justify-around flex-col mt-20 md:flex-row">
-        <img
-          src="https://64821ca5a6ff9d2cd98ceab9--kush636.netlify.app/static/media/web.9331f972.svg"
-          className="h-96 items-center mt-14 ml-4"
-        />
-        <div>
-          <SkillBox />
-          <SkillImg className=" md:items-center md:mb-2" />
+    <div className="flex flex-col items-center text-white mt-20 mr-2">
+      <div>
+        <h1 className="font-extrabold text-6xl self-center animate-Skills ">
+          Skills
+        </h1>
+      </div>
+      <div className="flex justify-center items-center lg:flex-row md:flex-col m-10 forMobileView mb-16">
+        <img src={Img} className="h-96 items-center lg:ml-16" />
+        <div className="flex flex-col items-center">
+          <SkillBox data={topSectionData} />
+          <SkillImg className="mb-5" />
         </div>
       </div>
-      <div className="flex justify-around mt-20 flex-col md:flex-row">
+      <div className="flex justify-center items-center lg:flex-row md:flex-col m-2 forMobileView mb-28">
         <img
-          src="https://isaaccomputerscience.org/api/v3.5.0/api/images/content/computer_science/computer_systems/operating_systems/figures/isaac_cs_sys_os_functions_of_os.svg"
-          className="h-96 items-center mt-14 ml-4"
+          src="https://images.shiksha.com/mediadata/shikshaOnline/mailers/2022/naukri-learning/what-is/What-is-Data-Structures-and-Algorithms.jpg"
+          className="h-96 w-[541.96px] items-center lg:ml-16 rounded-xl"
         />
-        <div>
-          <SkillBox />
+        <div className="md:ml-8 mb-16">
+          <SkillBox data={bottomSectionData} />
         </div>
       </div>
     </div>

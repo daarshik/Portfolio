@@ -4,8 +4,8 @@ import Navbar from "./components/Navbar";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import Skills from "./components/Skills";
 import Contact from "./components/Contact";
-
 import FootBar from "./components/FootBar";
+import GoToTop from "./components/GoToTop";
 
 function App() {
   return (
@@ -13,6 +13,7 @@ function App() {
       <BrowserRouter>
         <div className="flex flex-col">
           <Navbar />
+
           <FootBar />
         </div>
         <Routes>
@@ -21,6 +22,7 @@ function App() {
           <Route path="/about" Component={Experience}></Route>
           <Route path="/contact" Component={Contact}></Route>
         </Routes>
+        <GoToTop />
       </BrowserRouter>
 
       {/**/}

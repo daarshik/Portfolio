@@ -1,0 +1,12 @@
+.top-btn {
+  animation: gototop 1.2s linear infinite alternate-reverse;
+}
+
+@keyframes gototop {
+  0% {
+    transform: translateY(-0.25rem);
+  }
+  100% {
+    transform: translateY(0.25rem);
+  }
+}

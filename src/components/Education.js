@@ -4,10 +4,12 @@ import "./skills.css";
 
 const Education = () => {
   return (
-    <div className="animate-AboutSubSection">
+    <div className="animate-AboutSubSection mb-8">
       {Exp.map((item, i) => (
         <div key={i}>
-          <p className="text-4xl font-extrabold text-white">{item.section}</p>
+          <p className="text-4xl font-extrabold text-white ml-10">
+            {item.section}
+          </p>
           <div className="text-white">
             <div className="flex m-10 flex-col">
               {item.subsection.map((subItem, index) => (

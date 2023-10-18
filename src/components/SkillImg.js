@@ -13,7 +13,7 @@ import "./skills.css";
 
 const SkillImg = () => {
   return (
-    <div className="flex flex-wrap mt-1 md:ml-5">
+    <div className="flex flex-wrap mb-6">
       <img src={reactImg} className="h-12 m-3 hover:animate-spin moveIcons" />
       <img src={cppImg} className="h-12 m-3 hover:animate-pulse moveIcons" />
       <img src={cssImg} className="h-12 m-3 hover:animate-bounce moveIcons" />

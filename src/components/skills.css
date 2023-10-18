@@ -37,14 +37,18 @@
 @media (min-width: 350px) and (max-width: 640px) {
   .headingSection {
     font-size: small;
-    margin: 10px;
-    padding: 5px;
+    margin: 5px;
   }
   .durationSection {
     font-size: x-small;
   }
   .desSection {
     font-size: small;
+  }
+  .forMobileView {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
   }
 }
 

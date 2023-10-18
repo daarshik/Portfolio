@@ -4,13 +4,18 @@ import "./home.css";
 
 const HeroIntro = () => {
   const [text] = useTypewriter({
-    words: ["CS Engineer", "Front-end Developer", "UI/UX Designer"],
+    words: [
+      "CS Engineer",
+      "Front-end Developer",
+      "UI/UX Designer",
+      "Full Stack Developer",
+    ],
     loop: {},
     typeSpeed: 120,
     deleteSpeed: 80,
   });
   return (
-    <div className="tracking-wider ml-2">
+    <div className="tracking-wider ml-4 forMobile">
       <p className="text-6xl text-white animate-HeroIntro-Heading">
         <span className="block text-6xl ">Hello, </span>I'm{" "}
         <span style={{ fontWeight: "bold" }} className="text-8xl setName">
@@ -18,7 +23,7 @@ const HeroIntro = () => {
         </span>{" "}
         <span
           style={{ fontWeight: "bold", display: "block" }}
-          className=" text-4xl text-orange-300"
+          className=" text-2xl text-orange-300"
         >
           {text}
           <span style={{ color: "white" }}>

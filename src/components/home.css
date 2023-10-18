@@ -128,7 +128,7 @@
   animation: moveHair 2s ease-in-out infinite;
 }
 
-@media (min-width: 350px) and (max-width: 950px) {
+@media (min-width: 350px) and (max-width: 450px) {
   .setAboutMe {
     display: flex;
     flex-direction: column;
@@ -136,23 +136,35 @@
   .alignHeroSvg {
     height: 200px;
     width: 350px;
-    margin-left: 5px;
+    margin-left: 6%;
   }
   .setName {
     font-size: 72px;
     color: bisque;
   }
-}
-
-@media (min-width: 500px) and (max-width: 800px) {
-  .setIcons {
-    margin-left: 20%;
+  .forMobile {
+    margin-top: 70px;
   }
 }
 
-@media (min-width: 800px) {
-  .setIcons {
-    margin-left: 40vw;
+@media (min-width: 650px) and (max-width: 900px) {
+  .alignHeroSvg {
+    width: 650px;
+  }
+
+  .setForMobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .setIntro {
+    margin-right: 15%;
+  }
+
+  .setSvg {
+    margin-top: 5px;
   }
 }
 
