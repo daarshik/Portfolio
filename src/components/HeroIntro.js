@@ -15,10 +15,10 @@ const HeroIntro = () => {
     deleteSpeed: 80,
   });
   return (
-    <div className="tracking-wider ml-4 forMobile">
+    <div className="tracking-wider">
       <p className="text-6xl text-white animate-HeroIntro-Heading">
         <span className="block text-6xl ">Hello, </span>I'm{" "}
-        <span style={{ fontWeight: "bold" }} className="text-8xl setName">
+        <span style={{ fontWeight: "bold" }} className="text-8xl block setName">
           Daarshik
         </span>{" "}
         <span
@@ -31,7 +31,7 @@ const HeroIntro = () => {
           </span>
         </span>
       </p>
-      <p className="mt-3 text-white text-lg flex-nowrap ">
+      <p className="mt-3 text-white text-lg">
         As an aspiring Computer Science Engineer, I bring robust problem-solving
         skills and proficiency in C++, JavaScript, React, Java, and Spring Boot
         to the table. My proactive nature, effective communication, and

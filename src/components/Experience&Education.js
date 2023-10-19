@@ -10,12 +10,12 @@ const About = () => {
       <h1 className="font-extrabold text-6xl self-center animate-About">
         About Me
       </h1>
-      <div className="flex lg:flex-row sm:flex-col justify-around p-3 setAboutMe">
-        <div className="flex justify-center items-start mt-24 animate-ProfileImg">
+      <div className="flex lg:flex-row flex-col justify-around p-3 setAboutMe">
+        <div className="flex justify-center items-start mt-40 animate-ProfileImg">
           <img
             src={ProfileImg}
             style={{ boxShadow: "0 0 15px #eee" }}
-            className="aboutImg h-[35%] rounded-2xl  border"
+            className="aboutImg h-[20%] rounded-2xl  border"
           />
         </div>
 

@@ -10,16 +10,14 @@ const Home = () => {
   return (
     <div>
       <div className="flex flex-col lg:flex-row justify-center items-center">
-        <div className="setForMobile lg:flex lg:ml-16 ">
-          <div className="p-1 md:mt-40 md:ml-14 animate-HeroIntro setIntro">
+        <div
+          className="setForMobile lg:flex lg:flex-row lg:m-40  justify-center items-center
+        md:flex-col md:m-24 mt-28"
+        >
+          <div className="animate-HeroIntro setIntro">
             <HeroIntro />
           </div>
-          <div
-            className=" md:ml-32  md:mt-60  md:mr-20 md:p-35 md:w-[80%] 
-            sm:w-[40%]
-            lg:ml-40  lg:mt-60  lg:mr-20 md:p-35 lg:w-[100%] 
-            box-border bg-cover animate-HeroImg mt-3 md:mt-5 lg:mb-16"
-          >
+          <div className="animate-HeroImg setSvgImg">
             <HeroImg />{" "}
           </div>
         </div>
