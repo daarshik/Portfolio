@@ -6,7 +6,7 @@ const Contact = () => {
   return (
     <div className="text-white mt-20 flex flex-col items-center">
       <h1 className="text-6xl font-extrabold animate-Skills">Contact Me</h1>
-      <p className="text-lg m-2 p-20 animate-ProfileImg">
+      <p className="text-lg m-1 p-20 animate-ProfileImg">
         Hello! If you're looking for assistance or just want to chat about web
         development, I'm here to help! Feel free to reach out anytime. Have a
         fantastic day!

@@ -32,15 +32,15 @@ const HeroIntro = () => {
         </span>
       </p>
       <p className="mt-3 text-white text-lg">
-        As an aspiring Computer Science Engineer, I bring robust problem-solving
-        skills and proficiency in C++, JavaScript, React, Java, and Spring Boot
-        to the table. My proactive nature, effective communication, and
-        dedication to continuous learning make me an ideal candidate. I thrive
-        in collaborative environments and am eager to contribute effectively to
+        As a Computer Science Engineer, I bring robust problem-solving skills
+        and proficiency in C++, JavaScript, React, Java, and Spring Boot to the
+        table. My proactive nature, effective communication, and dedication to
+        continuous learning make me an ideal candidate. I thrive in
+        collaborative environments and am eager to contribute effectively to
         your team.
       </p>
       <a
-        href="https://drive.google.com/file/d/1hbNrOCjITre1Q5IBfXT1C-pqkfHYTgzh/view"
+        href="https://drive.google.com/file/d/1S7thy7NzkfjGE4cGeL3cPI-c2KG3SXQr/view"
         target="_blank"
         rel="noopener noreferrer"
       >
